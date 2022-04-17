@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="789d40f2-8dd5-42f6-9584-31c4ee848c74" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="27LGV5oJ0YDz7SwiNI4jT7SjIMO" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shelter/src" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Kenny\WebstormProjects\shelter\src" />
+      <recent name="C:\Users\Kenny\WebstormProjects\untitled5\src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kenny\WebstormProjects\untitled5\src" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="789d40f2-8dd5-42f6-9584-31c4ee848c74" name="Default Changelist" comment="" />
+      <created>1649091973014</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1649091973014</updated>
+      <workItem from="1649091974397" duration="4857000" />
+      <workItem from="1649175472779" duration="11073000" />
+      <workItem from="1649259203166" duration="14086000" />
+      <workItem from="1649348617397" duration="12249000" />
+      <workItem from="1649494852407" duration="833000" />
+      <workItem from="1649517952267" duration="4796000" />
+      <workItem from="1649532167141" duration="457000" />
+      <workItem from="1649533663302" duration="2749000" />
+      <workItem from="1649584078459" duration="16944000" />
+      <workItem from="1649614292985" duration="747000" />
+      <workItem from="1649693226076" duration="625000" />
+      <workItem from="1649779882285" duration="1000" />
+      <workItem from="1649868885001" duration="7880000" />
+      <workItem from="1649955387545" duration="6665000" />
+      <workItem from="1650040794114" duration="9996000" />
+      <workItem from="1650098843340" duration="2233000" />
+      <workItem from="1650114303748" duration="4750000" />
+      <workItem from="1650120940362" duration="14455000" />
+      <workItem from="1650137749357" duration="20000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="616" y="240" key="run.anything.popup" timestamp="1650114911541">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1650114911541" />
+  </component>
+</project>
