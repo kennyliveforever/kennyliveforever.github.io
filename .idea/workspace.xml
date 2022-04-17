@@ -26,15 +26,14 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../shelter/src" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Kenny\WebstormProjects\shelter\src" />
+    <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Kenny\WebstormProjects\untitled5\src" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
+    <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Kenny\WebstormProjects\untitled5\src" />
     </key>
   </component>
@@ -58,25 +57,10 @@
       <workItem from="1649533663302" duration="2749000" />
       <workItem from="1649584078459" duration="16944000" />
       <workItem from="1649614292985" duration="747000" />
-      <workItem from="1649693226076" duration="625000" />
-      <workItem from="1649779882285" duration="1000" />
-      <workItem from="1649868885001" duration="7880000" />
-      <workItem from="1649955387545" duration="6665000" />
-      <workItem from="1650040794114" duration="9996000" />
-      <workItem from="1650098843340" duration="2233000" />
-      <workItem from="1650114303748" duration="4750000" />
-      <workItem from="1650120940362" duration="14455000" />
-      <workItem from="1650137749357" duration="20000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="616" y="240" key="run.anything.popup" timestamp="1650114911541">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="616" y="240" key="run.anything.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1650114911541" />
   </component>
 </project>
