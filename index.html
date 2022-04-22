@@ -5,47 +5,53 @@
     <link rel="stylesheet" href="style.css">
     <script>
         function hide() {
-            let puppy = document.body.querySelector('.puppy')
-            let start = document.body.querySelector('.startContent')
-            let burger = document.body.querySelector('.burger')
-            let back = document.body.querySelector('.start')
-            let menu = document.body.querySelector('.menu')
-            if (puppy.style.display == 'block') {
-                puppy.style.display = 'none'
-                start.style.display = 'none'
+            var burger = document.body.querySelector('.burger')
+            var back = document.body.querySelector('.start')
+            var menu = document.body.querySelector('.menu')
+            var header = document.body.querySelector('.header')
+            var shadow = document.body.querySelector('.shadow')
+            var body = document.body
+            function scroll() {
+
+            }
+            if (burger.style.transform == 'unset') {
                 burger.style.transform = 'rotate(90deg)'
-                back.style.background = '#292929'
-                menu.style.display = 'block'
+                header.style.width = '320px'
+                header.style.marginRight = '0'
+                menu.style.transform = 'translate(-100%)'
+                shadow.style.display = 'block'
             } else {
-                puppy.style.display = 'block'
-                start.style.display = 'block'
                 burger.style.transform = 'unset'
                 back.style.background = ''
-                menu.style.display = ''
+                header.style.width = ''
+                header.style.marginRight = ''
+                menu.style.transform = 'translate(50%)'
+                shadow.style.display = 'none'
             }
         }
     </script>
 </head>
 <body class="body">
 <main class="main">
-            <header class="header">
-                <div class="logo">
+    <div class="shadow" style="display: none" onclick="hide()"></div>
+            <header class="header" style="width: ; height: ; background: ; margin-right: ">
+                <div class="logo" style="left: ">
                     <a class="name">Cozy House</a>
                     <a class="description">Shelter for pets in Boston</a>
                 </div>
-                <div class="menu" style="display: ;">
+                <div class="menu" style="display: ; transform: ">
                     <div class="linkAbout">
                         <a class="about">About the shelter</a>
                         <div class="underLine"></div>
                     </div>
                     <div class="linkPets">
-                        <a href="./pets/pets.html" class="pets">Our pets</a>
+                        <a href="./pets/pets.html" class="pets" onclick="hide()">Our pets</a>
                     </div>
                     <div class="linkHelp">
-                        <a href="#help" class="help">Help the shelter</a>
+                        <a href="#help" class="help" onclick="hide()">Help the shelter</a>
                     </div>
                     <div class="linkContacts">
-                        <a href="#contacts" class="contacts">Contacts</a>
+                        <a href="#contacts" class="contacts" onclick="hide()">Contacts</a>
                     </div>
                 </div>
                 <div class="burger" style="transform: unset" onclick="hide()"></div>
