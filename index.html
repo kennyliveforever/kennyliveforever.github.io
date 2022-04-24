@@ -1,37 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="html" lang="en">
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Shelter</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        function hide() {
-            var burger = document.body.querySelector('.burger')
-            var back = document.body.querySelector('.start')
-            var menu = document.body.querySelector('.menu')
-            var header = document.body.querySelector('.header')
-            var shadow = document.body.querySelector('.shadow')
-            var body = document.body
-            function scroll() {
-
-            }
-            if (burger.style.transform == 'unset') {
-                burger.style.transform = 'rotate(90deg)'
-                header.style.width = '320px'
-                header.style.marginRight = '0'
-                menu.style.transform = 'translate(-100%)'
-                shadow.style.display = 'block'
-            } else {
-                burger.style.transform = 'unset'
-                back.style.background = ''
-                header.style.width = ''
-                header.style.marginRight = ''
-                menu.style.transform = 'translate(50%)'
-                shadow.style.display = 'none'
-            }
-        }
-    </script>
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body class="body">
+<div class="modal" style="display: none" onclick="modal()">
+    <div class="modalCard">
+        <div class="modalImage" style="background: "></div>
+    </div>
+</div>
 <main class="main">
     <div class="shadow" style="display: none" onclick="hide()"></div>
             <header class="header" style="width: ; height: ; background: ; margin-right: ">
@@ -99,19 +78,19 @@
                 <a>are looking for a house</a>
             </div>
             <div class="slider">
-                <div class="arrowRoundLeft">
+                <div class="arrowRoundLeft" onclick="slide()">
                         <div class="arrowLeft"></div>
                 </div>
-                <div class="cardKatrine">
+                <div class="cardKatrine" onclick="modal()">
                     <div class="imgKatrine"></div>
-                    <a class="nameKatrine">Katrine</a>
+                    <a class="nameKatrine">Katrin</a>
                     <div class="buttonBoxKatrine">
                         <div class="buttonKatrine">
                             <a class="buttonKatrineLabel">Learn more</a>
                         </div>
                     </div>
                 </div>
-                <div class="cardJennifer">
+                <div class="cardJennifer" onclick="modal()">
                     <div class="imgJennifer"></div>
                     <a class="nameJennifer">Jennifer</a>
                     <div class="buttonBoxJennifer">
@@ -120,7 +99,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="cardWoody">
+                <div class="cardWoody" onclick="modal()">
                     <div class="imgWoody"></div>
                     <a class="nameWoody">Woody</a>
                     <div class="buttonBoxWoody">
@@ -129,7 +108,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="arrowRoundRight">
+                <div class="arrowRoundRight" onclick="slide()">
                     <div class="arrowRight"></div>
                 </div>
             </div>
