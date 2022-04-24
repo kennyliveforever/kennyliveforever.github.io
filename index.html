@@ -1,51 +1,36 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="html" lang="en">
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Shelter</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        function hide() {
-            let puppy = document.body.querySelector('.puppy')
-            let start = document.body.querySelector('.startContent')
-            let burger = document.body.querySelector('.burger')
-            let back = document.body.querySelector('.start')
-            let menu = document.body.querySelector('.menu')
-            if (puppy.style.display == 'block') {
-                puppy.style.display = 'none'
-                start.style.display = 'none'
-                burger.style.transform = 'rotate(90deg)'
-                back.style.background = '#292929'
-                menu.style.display = 'block'
-            } else {
-                puppy.style.display = 'block'
-                start.style.display = 'block'
-                burger.style.transform = 'unset'
-                back.style.background = ''
-                menu.style.display = ''
-            }
-        }
-    </script>
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body class="body">
+<div class="modal" style="display: none" onclick="modal()">
+    <div class="modalCard">
+        <div class="modalImage" style="background: "></div>
+    </div>
+</div>
 <main class="main">
-            <header class="header">
-                <div class="logo">
+    <div class="shadow" style="display: none" onclick="hide()"></div>
+            <header class="header" style="width: ; height: ; background: ; margin-right: ">
+                <div class="logo" style="left: ">
                     <a class="name">Cozy House</a>
                     <a class="description">Shelter for pets in Boston</a>
                 </div>
-                <div class="menu" style="display: ;">
+                <div class="menu" style="display: ; transform: ">
                     <div class="linkAbout">
                         <a class="about">About the shelter</a>
                         <div class="underLine"></div>
                     </div>
                     <div class="linkPets">
-                        <a href="./pets/pets.html" class="pets">Our pets</a>
+                        <a href="./pets/pets.html" class="pets" onclick="hide()">Our pets</a>
                     </div>
                     <div class="linkHelp">
-                        <a href="#help" class="help">Help the shelter</a>
+                        <a href="#help" class="help" onclick="hide()">Help the shelter</a>
                     </div>
                     <div class="linkContacts">
-                        <a href="#contacts" class="contacts">Contacts</a>
+                        <a href="#contacts" class="contacts" onclick="hide()">Contacts</a>
                     </div>
                 </div>
                 <div class="burger" style="transform: unset" onclick="hide()"></div>
@@ -93,19 +78,19 @@
                 <a>are looking for a house</a>
             </div>
             <div class="slider">
-                <div class="arrowRoundLeft">
+                <div class="arrowRoundLeft" onclick="slide()">
                         <div class="arrowLeft"></div>
                 </div>
-                <div class="cardKatrine">
+                <div class="cardKatrine" onclick="modal()">
                     <div class="imgKatrine"></div>
-                    <a class="nameKatrine">Katrine</a>
+                    <a class="nameKatrine">Katrin</a>
                     <div class="buttonBoxKatrine">
                         <div class="buttonKatrine">
                             <a class="buttonKatrineLabel">Learn more</a>
                         </div>
                     </div>
                 </div>
-                <div class="cardJennifer">
+                <div class="cardJennifer" onclick="modal()">
                     <div class="imgJennifer"></div>
                     <a class="nameJennifer">Jennifer</a>
                     <div class="buttonBoxJennifer">
@@ -114,7 +99,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="cardWoody">
+                <div class="cardWoody" onclick="modal()">
                     <div class="imgWoody"></div>
                     <a class="nameWoody">Woody</a>
                     <div class="buttonBoxWoody">
@@ -123,7 +108,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="arrowRoundRight">
+                <div class="arrowRoundRight" onclick="slide()">
                     <div class="arrowRight"></div>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-@media (min-width: 769px) {
+@media (min-width: 1280px) {
     .burger {
         position: absolute;
         width: 30px;
@@ -13,6 +13,33 @@
         margin: 0;
     }
 
+    .modal {
+        position: absolute;
+        width: 100%;
+        height: 3796px;
+        background: rgba(0,0,0, 0.3);
+        z-index: 6;
+        display: none;
+    }
+
+    .modalCard {
+        position: fixed;
+        width: 900px;
+        height: 500px;
+        top: calc(50% - 500px / 2);
+        left: calc(50% - 900px / 2);
+        z-index: 7;
+        border-radius: 9px;
+        background: white;
+    }
+
+    .modalImage {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: max-content;
+    }
+
     .main {
         position: relative;
         width: 1280px;
@@ -20,7 +47,7 @@
         margin: auto;
     }
 
-    /***********************************************************/
+    /**********************************************************************/
     .puppy {
         position: absolute;
         width: 698px;
@@ -1382,7 +1409,7 @@
 
 }
 
-@media (max-width: 768px){
+@media (min-width: 768px) and (max-width: 1279px){
 
     .burger {
         position: absolute;
@@ -1398,9 +1425,29 @@
         margin: 0;
     }
 
+    .modal {
+        position: absolute;
+        width: 100%;
+        height: 3796px;
+        background: rgba(0,0,0, 0.3);
+        z-index: 6;
+    }
+
+
+    .modalCard {
+        position: fixed;
+        width: 900px;
+        height: 500px;
+        top: 188px;
+        left: 190px;
+        z-index: 7;
+        border-radius: 9px;
+        background: white;
+    }
+
     .main {
         position: relative;
-        width: 768px;
+        min-width: 768px;
         height: 3796px;
         margin: 0px;
     }
@@ -1415,19 +1462,22 @@
     }
 
     .header {
-        position: absolute;
-        width: 708px;
+        position: relative;
+        /*min-width: auto;*/
+        width: available;
         height: 60px;
         margin-left: auto;
         margin-right: auto;
         top: 30px;
-        left: 30px;
+        /*left: 30px;*/
+        /*right: 30px;*/
     }
 
     .logo {
         position: absolute;
         width: 250px;
         height: 60px;
+        left: 30px;
     }
 
     .name {
@@ -1461,7 +1511,8 @@
         position: absolute;
         width: 443px;
         height: 27px;
-        left: 265px;
+        /*left: 265px;*/
+        right: 30px;
         top: 16px;
     }
 
@@ -1568,13 +1619,15 @@
         top: 0px;
         background: url(./src/start-screen-gradient-background768.png);
         z-index: -1;
+        background-size: cover;
     }
 
     .startContent {
-        position: absolute;
+        position: relative;
         width: 569px;
         height: 1015px;
-        left: 99px;
+        margin-left: auto;
+        margin-right: auto;
         top: 150px;
     }
 
@@ -1738,11 +1791,12 @@
     }
 
     .petsContent {
-        position: absolute;
+        position: relative;
         width: 708px;
         height: 697px;
-        left: 30px;
         top: 80px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .petsHeader {
@@ -2139,10 +2193,11 @@
     }
 
     .contentHelp {
-        position: absolute;
+        position: relative;
         width: 630px;
         height: 599px;
-        left: 69px;
+        margin-right: auto;
+        margin-left: auto;
         top: 80px;
     }
 
@@ -2467,12 +2522,18 @@
         background: #F6F6F6;
     }
 
+    .donateContent{
+        height: 768px;
+    }
+
     .donateDog {
         position: absolute;
         width: 505px;
         height: 261px;
-        left: 131px;
+        /*left: 131px;*/
         top: 422px;
+        bottom: 0px;
+        left: calc(50% - 422px/2 - 0.5px);
         background: url(./src/donation-dog.png);
     }
 
@@ -2480,8 +2541,9 @@
         position: absolute;
         width: 380px;
         height: 282px;
-        left: 194px;
+        /*left: 194px;*/
         top: 80px;
+        left: calc(50% - 380px/2 - 0.5px);
     }
 
     .donateHeader {
@@ -2577,13 +2639,15 @@
         right: 0%;
         top: 4652px;
         background: url(./src/footer-gradient-background768.png);
+        background-size: cover;
     }
 
     .footerContent {
-        position: absolute;
+        position: relative;
         width: 708px;
         height: 234px;
-        left: 30px;
+        margin-left: auto;
+        margin-right: auto;
         top: 30px;
     }
 
@@ -2778,16 +2842,45 @@
 
 }
 
-@media (max-width: 320px) {
+@media (min-width: 320px) and (max-width: 767px) {
     .body {
         margin: 0;
     }
 
+    .modal {
+        position: absolute;
+        width: 100%;
+        height: 3796px;
+        background: rgba(0,0,0, 0.3);
+        z-index: 6;
+    }
+
+    .modalCard {
+        position: fixed;
+        width: 900px;
+        height: 500px;
+        top: 188px;
+        left: 190px;
+        z-index: 7;
+        border-radius: 9px;
+        background: white;
+    }
+
     .main {
         position: relative;
-        width: 320px;
+        min-width: 320px;
         height: 4684px;
         margin: 0px;
+        overflow: hidden;
+    }
+
+    .shadow {
+        position: absolute;
+        width: 100%;
+        height: 4684px;
+        margin: 0px;
+        background-color:rgba(0,0,0,0.3);
+        z-index: 3;
     }
 
     /**********************************************************************/
@@ -2800,19 +2893,20 @@
     }
 
     .header {
-        position: absolute;
-        width: 257px;
+        position: relative;
+        /*width: 257px;*/
         height: 60px;
         margin-left: auto;
         margin-right: auto;
         top: 30px;
-        left: 10px;
     }
 
     .logo {
         position: absolute;
         width: 250px;
         height: 60px;
+        left: 10px;
+        z-index: 5;
     }
 
     .name {
@@ -2847,18 +2941,23 @@
         position: absolute;
         width: 30px;
         height: 22px;
-        left: 227px;
+        right: 53px;
         top: 19px;
+        transition-duration: 1s;
         background: url(./src/Burger.png);
+        z-index: 5;
     }
 
     .menu {
-        position: absolute;
-        width: 243px;
-        height: 327px;
-        left: 29px;
-        top: 218px;
-        display: none;
+        position: relative;
+        width: 320px;
+        height: 4684px;
+        right: -100%;
+        top: -30px;
+        display: block;
+        transition-duration: 1s;
+        background: #292929;
+        z-index: 4;
     }
 
     .linkAbout {
@@ -2869,8 +2968,8 @@
         position: absolute;
         width: 243px;
         height: 54px;
-        right: 0px;
-        top: 0px;
+        left: 39px;
+        top: 248px;
     }
 
     .linkAbout:hover {
@@ -2903,8 +3002,8 @@
         position: absolute;
         width: 123px;
         height: 51px;
-        right: 60px;
-        top: 94px;
+        left: 99px;
+        top: 342px;
 
     }
 
@@ -2931,8 +3030,8 @@
         position: absolute;
         width: 225px;
         height: 51px;
-        right: 9px;
-        top: 185px;
+        left: 48px;
+        top: 433px;
     }
 
     .help {
@@ -2958,8 +3057,8 @@
         position: absolute;
         width: 127px;
         height: 51px;
-        right: 58px;
-        top: 276px;
+        left: 97px;
+        top: 524px;
     }
 
     .contacts {
@@ -2985,13 +3084,15 @@
         top: 0px;
         background: url(./src/start-screen-background320.jpg);
         z-index: -1;
+        background-size: cover;
     }
 
     .startContent {
-        position: absolute;
+        position: relative;
         width: 300px;
         height: 673px;
-        left: 10px;
+        margin-right: auto;
+        margin-left: auto;
         top: 150px;
     }
 
@@ -3070,8 +3171,8 @@
 
     .puppy {
         position: absolute;
-        left: 13.33%;
-        right: 0%;
+        /*left: 13.33%;*/
+        left: calc(50% - 260px / 2 + 20px);
         /*top: 59.58%;*/
         bottom: 0.03%;
         width: 260px;
@@ -3195,6 +3296,7 @@
         display: flex;
         align-items: center;
         text-align: center;
+        flex-direction: column;
         letter-spacing: 0.06em;
         color: #545454;
     }
@@ -3473,7 +3575,8 @@
         align-items: center;
         padding: 15px 45px;
         position: absolute;
-        left: 20px;
+        align-self: center;
+        left: 25px;
         top: 655px;
         background: #F1CDB3;
         border-radius: 100px;
@@ -3575,10 +3678,12 @@
     }
 
     .contentHelp {
-        position: absolute;
+        position: relative;
         width: 290px;
         height: 555px;
-        left: 15px;
+        /*left: 15px;*/
+        margin-right: auto;
+        margin-left: auto;
         top: 42px;
     }
 
@@ -3604,6 +3709,7 @@
         display: flex;
         align-items: center;
         text-align: center;
+        flex-direction: column;
         letter-spacing: 0.06em;
         color: #545454;
     }
@@ -3916,18 +4022,20 @@
         position: absolute;
         width: 260px;
         height: 135.2px;
-        left: 30px;
+        left: calc(50% - (260px / 2));
         top: 365px;
         background: url(./src/donation-dog.png);
         background-size: cover;
     }
 
     .donateText {
-        position: absolute;
+        position: relative;
         width: 300px;
         height: 281px;
-        left: 10px;
+        /*left: 10px;*/
         top: 42px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .donateHeader {
@@ -4045,11 +4153,13 @@
     }
 
     .footerContent {
-        position: absolute;
+        position: relative;
         width: 300px;
         height: 470px;
-        left: 10px;
+        /*left: 10px;*/
         top: 30px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .footerContacts {
@@ -4070,7 +4180,7 @@
 
     .mail {
         position: absolute;
-        width: 251px;
+        width: 253px;
         height: 32px;
         left: 13px;
         top: 104px;
@@ -4084,6 +4194,7 @@
     }
 
     .mailLink {
+        display: inline;
         width: 40px;
         height: 32px;
         text-decoration: none;
@@ -4091,6 +4202,11 @@
     }
 
     .mailText {
+        position: absolute;
+        width: 191px;
+        top: 5px;
+        left: 60px;
+        right: 0px;
         height: 23px;
         font-family: 'Georgia';
         font-style: normal;
@@ -4118,6 +4234,12 @@
     }
 
     .phoneText {
+        position: absolute;
+        width: 191px;
+        top: 5px;
+        left: 60px;
+        right: 0px;
+        height: 23px;
         font-family: 'Georgia';
         font-style: normal;
         font-weight: 400;
