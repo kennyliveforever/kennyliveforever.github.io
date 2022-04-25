@@ -22,6 +22,16 @@
         display: none;
     }
 
+    .close {
+        position: absolute;
+        width: 52px;
+        height: 52px;
+        right: -42px;
+        top: -52px;
+        z-index: 8;
+        background-image: url("./src/modal_close_button.png");
+    }
+
     .modalCard {
         position: fixed;
         width: 900px;
@@ -35,9 +45,93 @@
 
     .modalImage {
         position: absolute;
-        top: 0;
-        left: 0;
-        width: max-content;
+        top: 0px;
+        left: 0px;
+        width: 500px;
+        height: 100%;
+        background-size: cover;
+        z-index: 8;
+        border-radius: 9px 0px 0px 9px;
+    }
+
+    .modalInfo {
+        position: absolute;
+        width: 351px;
+        height: 362px;
+        left: 529px;
+        top: 50px;
+    }
+
+    .modalName {
+        position: absolute;
+        width: 145px;
+        height: 45px;
+        left: 1px;
+        top: 0px;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+    }
+
+    .modalPet {
+        position: absolute;
+        height: 23px;
+        left: 1px;
+        top: 55px;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+        color: #000000;
+    }
+
+    .modalDescription {
+        position: absolute;
+        height: 102px;
+        left: 1px;
+        top: 118px;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+    }
+
+    .modalList {
+        position: absolute;
+        /*width: 154px;*/
+        height: 102px;
+        left: -25px;
+        top: 250px;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li::before {
+        content: "•";
+        position: absolute;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+        color: #F1CDB3;
+    }
+
+    li {
+        margin-top: 10px;
     }
 
     .main {
@@ -1433,16 +1527,116 @@
         z-index: 6;
     }
 
+    .close {
+        position: absolute;
+        width: 52px;
+        height: 52px;
+        right: -42px;
+        top: -52px;
+        z-index: 8;
+        background-image: url("./src/modal_close_button.png");
+    }
 
     .modalCard {
         position: fixed;
-        width: 900px;
-        height: 500px;
-        top: 188px;
-        left: 190px;
+        width: 630px;
+        height: 350px;
+        top: calc(50% - 350px / 2);
+        left: calc(50% - 630px / 2);
         z-index: 7;
         border-radius: 9px;
         background: white;
+    }
+
+    .modalImage {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 350px;
+        height: 100%;
+        background-size: cover;
+        z-index: 8;
+        border-radius: 9px 0px 0px 9px;
+    }
+
+    .modalInfo {
+        position: absolute;
+        width: 260px;
+        height: 303px;
+        left: 361px;
+        top: 10px;
+    }
+
+    .modalName {
+        position: absolute;
+        width: 145px;
+        height: 45px;
+        left: 1px;
+        top: 0px;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+    }
+
+    .modalPet {
+        position: absolute;
+        height: 23px;
+        left: 1px;
+        top: 55px;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+        color: #000000;
+    }
+
+    .modalDescription {
+        position: absolute;
+        height: 98px;
+        left: 1px;
+        top: 98px;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+    }
+
+    .modalList {
+        position: absolute;
+        /*width: 154px;*/
+        height: 87px;
+        left: -25px;
+        top: 206px;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li::before {
+        content: "•";
+        position: absolute;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+        color: #F1CDB3;
+    }
+
+    li {
+        margin-top: 5px;
     }
 
     .main {
@@ -2857,13 +3051,116 @@
 
     .modalCard {
         position: fixed;
-        width: 900px;
-        height: 500px;
-        top: 188px;
-        left: 190px;
+        width: 240px;
+        height: 341px;
+        top: calc(50% - 341px / 2);
+        left: calc(50% - 208px / 2);
         z-index: 7;
         border-radius: 9px;
         background: white;
+    }
+
+    .close {
+        position: absolute;
+        width: 52px;
+        height: 52px;
+        right: -42px;
+        top: -52px;
+        z-index: 8;
+        background-image: url("./src/modal_close_button.png");
+    }
+
+    .modalImage {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        width: 500px;
+        height: 100%;
+        background-size: cover;
+        z-index: 8;
+        border-radius: 9px 0px 0px 9px;
+        display: none;
+    }
+
+    .modalInfo {
+        position: absolute;
+        width: 220px;
+        height: 321px;
+        left: 10px;
+        top: 10px;
+    }
+
+    .modalName {
+        position: absolute;
+        height: 45px;
+        margin-left: auto;
+        margin-right: auto;
+        top: 0px;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 35px;
+        line-height: 130%;
+        letter-spacing: 0.06em;
+    }
+
+    .modalPet {
+        position: absolute;
+        height: 23px;
+        text-align: center;
+        top: 55px;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 115%;
+        letter-spacing: 0.06em;
+        color: #000000;
+    }
+
+    .modalDescription {
+        position: absolute;
+        width: 220px;
+        height: 112px;
+        left: 0px;
+        top: 98px;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+    }
+
+    .modalList {
+        position: absolute;
+        /*width: 154px;*/
+        height: 87px;
+        left: -25px;
+        top: 224px;
+        font-family: 'Georgia';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 15px;
+        line-height: 110%;
+        letter-spacing: 0.06em;
+    }
+
+    ul {
+        list-style: none;
+    }
+
+    li::before {
+        content: "•";
+        position: absolute;
+        display: inline-block;
+        width: 1em;
+        margin-left: -1em;
+        color: #F1CDB3;
+    }
+
+    li {
+        margin-top: 10px;
     }
 
     .main {

@@ -1823,6 +1823,15 @@
         margin: 0;
     }
 
+    .shadow {
+        position: absolute;
+        width: 100%;
+        height: 2578px;
+        margin: 0px;
+        background-color:rgba(0,0,0,0.3);
+        z-index: 3;
+    }
+
     .burger {
         position: absolute;
         width: 30px;
@@ -1831,6 +1840,8 @@
         top: 19px;
         background: url(../src/Burger1.png);
         display: block;
+        z-index: 6;
+        transition-duration: 1s;
     }
 
     .mobileMenu {
@@ -1846,6 +1857,8 @@
         position: relative;
         min-width: 320px;
         height: 2578px;
+        margin: 0;
+        overflow: hidden;
     }
 
     .headerBlock {
@@ -1857,7 +1870,7 @@
         margin-left: auto;
         margin-right: auto;
         background: #FFFFFF;
-        z-index: 3;
+        z-index: 5;
     }
 
     .headerContent {
@@ -1878,6 +1891,7 @@
         height: 60px;
         left: 0px;
         top: 0px;
+        z-index: 6;
     }
 
     .logoHeader {
@@ -1918,13 +1932,15 @@
     }
 
     .menu {
-        position: absolute;
-        width: 243px;
-        height: 327px;
-        left: 29px;
-        top: 218px;
-        display: none;
-        z-index: 2;
+        position: relative;
+        width: 330px;
+        height: 4684px;
+        right: -100%;
+        top: -30px;
+        display: block;
+        transition-duration: 1s;
+        background: white;
+        z-index: 4;
     }
 
     .linkAbout {
@@ -1935,8 +1951,8 @@
         position: absolute;
         width: 243px;
         height: 54px;
-        right: 0px;
-        top: 0px;
+        left: 39px;
+        top: 248px;
     }
 
     .about {
@@ -1969,7 +1985,8 @@
         width: 123px;
         height: 51px;
         right: 60px;
-        top: 94px;
+        left: 99px;
+        top: 342px;
     }
 
     .pets {
@@ -1993,8 +2010,8 @@
         position: absolute;
         width: 225px;
         height: 51px;
-        right: 9px;
-        top: 185px;
+        left: 48px;
+        top: 433px;
     }
 
     .help {
@@ -2020,8 +2037,8 @@
         position: absolute;
         width: 127px;
         height: 51px;
-        right: 58px;
-        top: 276px;
+        left: 97px;
+        top: 524px;
     }
 
     .contacts {
@@ -2560,6 +2577,7 @@
         height: 809px;
         left: 0%;
         right: 0%;
+        bottom: 0px;
         top: 1649px;
         background: url(../src/footer-gradient-background768.png);
         background-size: cover;

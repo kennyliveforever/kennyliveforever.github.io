@@ -8,7 +8,27 @@
 <body class="body">
 <div class="modal" style="display: none" onclick="modal()">
     <div class="modalCard">
+        <div class="close"></div>
         <div class="modalImage" style="background: "></div>
+        <div class="modalInfo">
+            <a class="modalName"></a>
+            <a class="modalPet"></a>
+            <a class="modalDescription"></a>
+            <ul class="modalList">
+                <li style="margin-top: 10px">Age:
+                    <a class="age"></a>
+                </li>
+                <li>Inoculations:
+                    <a class="inoculations"></a>
+                </li>
+                <li>Diseases:
+                    <a class="diseases"></a>
+                </li>
+                <li>Parasites:
+                    <a class="parasites"></a>
+                </li>
+            </ul>
+        </div>
     </div>
 </div>
 <main class="main">
@@ -19,18 +39,18 @@
                     <a class="description">Shelter for pets in Boston</a>
                 </div>
                 <div class="menu" style="display: ; transform: ">
-                    <div class="linkAbout">
+                    <div class="linkAbout" onclick="hide()">
                         <a class="about">About the shelter</a>
                         <div class="underLine"></div>
                     </div>
-                    <div class="linkPets">
-                        <a href="./pets/pets.html" class="pets" onclick="hide()">Our pets</a>
+                    <div class="linkPets" onclick="hide()">
+                        <a href="./pets/pets.html" class="pets">Our pets</a>
                     </div>
                     <div class="linkHelp">
-                        <a href="#help" class="help" onclick="hide()">Help the shelter</a>
+                        <a href="#help" class="help">Help the shelter</a>
                     </div>
-                    <div class="linkContacts">
-                        <a href="#contacts" class="contacts" onclick="hide()">Contacts</a>
+                    <div class="linkContacts" onclick="hide()">
+                        <a href="#contacts" class="contacts">Contacts</a>
                     </div>
                 </div>
                 <div class="burger" style="transform: unset" onclick="hide()"></div>
@@ -81,30 +101,30 @@
                 <div class="arrowRoundLeft" onclick="slide()">
                         <div class="arrowLeft"></div>
                 </div>
-                <div class="cardKatrine" onclick="modal()">
-                    <div class="imgKatrine"></div>
-                    <a class="nameKatrine">Katrin</a>
-                    <div class="buttonBoxKatrine">
-                        <div class="buttonKatrine">
-                            <a class="buttonKatrineLabel">Learn more</a>
+                <div class="cardKatrine" id="4" onclick="modal()">
+                    <div class="imgKatrine"id="4"></div>
+                    <a class="nameKatrine" id="4">Katrin</a>
+                    <div class="buttonBoxKatrine" id="4">
+                        <div class="buttonKatrine" id="4">
+                            <a class="buttonKatrineLabel" id="4">Learn more</a>
                         </div>
                     </div>
                 </div>
-                <div class="cardJennifer" onclick="modal()">
-                    <div class="imgJennifer"></div>
-                    <a class="nameJennifer">Jennifer</a>
-                    <div class="buttonBoxJennifer">
-                        <div class="buttonJennifer">
-                            <a class="buttonJenniferLabel">Learn more</a>
+                <div class="cardJennifer" id="0" onclick="modal()">
+                    <div class="imgJennifer" id="0"></div>
+                    <a class="nameJennifer" id="0">Jennifer</a>
+                    <div class="buttonBoxJennifer" id="0">
+                        <div class="buttonJennifer" id="0">
+                            <a class="buttonJenniferLabel" id="0">Learn more</a>
                         </div>
                     </div>
                 </div>
-                <div class="cardWoody" onclick="modal()">
-                    <div class="imgWoody"></div>
-                    <a class="nameWoody">Woody</a>
-                    <div class="buttonBoxWoody">
-                        <div class="buttonWoody">
-                            <a class="buttonWoodyLabel">Learn more</a>
+                <div class="cardWoody" id="2" onclick="modal()">
+                    <div class="imgWoody" id="2"></div>
+                    <a class="nameWoody" id="2">Woody</a>
+                    <div class="buttonBoxWoody" id="2">
+                        <div class="buttonWoody" id="2">
+                            <a class="buttonWoodyLabel" id="2">Learn more</a>
                         </div>
                     </div>
                 </div>

@@ -4,43 +4,29 @@
     <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
     <title>Pets</title>
     <link rel="stylesheet" href="style.css">
-    <script>
-        function hide() {
-            let mobile = document.querySelector('.mobileMenu')
-            let burger = document.querySelector('.burger')
-            let menu = document.body.querySelector('.menu')
-            if (mobile.style.display == 'none') {
-                mobile.style.display = 'block'
-                burger.style.transform = 'rotate(90deg)'
-                menu.style.display = 'block'
-            } else {
-                mobile.style.display = 'none'
-                burger.style.transform = 'unset'
-                menu.style.display = ''
-            }
-        }
-    </script>
+    <script type="text/javascript" src="script.js"></script>
 </head>
 <body>
 <div class="wrapper">
-    <header class="headerBlock">
+    <div class="shadow" style="display: none" onclick="hide()"></div>
+    <header class="headerBlock" style="width: ; height: ; background: ; margin-right: ">
         <div class="headerContent">
-            <div class="logo">
+            <div class="logo" style="left: ">
                 <h1 class="logoHeader">Cozy House</h1>
                 <a class="logoSub">Shelter for pets in Boston</a>
             </div>
-            <div class="menu" style="display: ">
-                <div class="linkAbout">
+            <div class="menu" style="display: ; transform: ">
+                <div class="linkAbout" onclick="hide()">
                     <a href="../index.html" class="about">About the shelter</a>
                 </div>
-                <div class="linkPets">
+                <div class="linkPets" onclick="hide()">
                     <a class="pets">Our pets</a>
                     <div class="underLine"></div>
                 </div>
-                <div class="linkHelp">
+                <div class="linkHelp" onclick="hide()">
                     <a href="../index.html#help" class="help">Help the shelter</a>
                 </div>
-                <div class="linkContacts">
+                <div class="linkContacts" onclick="hide()">
                     <a href="#contacts" class="contacts">Contacts</a>
                 </div>
             </div>
